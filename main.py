@@ -8,7 +8,12 @@ Kérj be 2 számot a felhasználótól.
 """
 import ciklusok
 
-szam1: int =(input("Adj meg egy számot: "))
-szam2: int =(input("Adj meg még egy szamot: "))
+a: int =int(input("a: "))
+b: int =int(input("b: "))
+""" A felhasználó csak olyan b-t tudjon megadni, ami >a"""
+while (a>=b):
+    print("B-nek nagyobbnak kell lennie A-nal")
+    b:int = int(input(f"adj{a}-nál nagyobban!"))
 
-ciklusok.szamok(szam1, szam2)
+
+ciklusok.szamok(a, b)
